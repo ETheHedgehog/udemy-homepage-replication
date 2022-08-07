@@ -1,0 +1,285 @@
+html, body{
+    font-family: -apple-system,  Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: Georgia,Times,times new roman,serif;
+}
+
+#Logo{
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* ------ Navigation Bar ------*/
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    height: 4em;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08)
+}
+
+.nav-list{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-item{
+    display: inline-block;
+    max-height: 100%;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.nav-item-1{
+    flex-grow: 0;
+}
+
+.nav-item-2{
+    flex-grow: 1;
+}
+
+.nav-item-30{
+    flex-grow: 30;
+    cursor: default;
+}
+
+.nav-menu{
+    display: none;
+}
+
+.search-input{
+    width: 60%;
+    height: 2em;
+    padding: 0.5em;
+    padding-left: 2.5em;
+    border-radius: 9999px;
+    border: 1px solid black;
+    background: url("images/search-svgrepo-com.svg") no-repeat left;
+    background-color: rgb(241, 241, 241);
+    background-position-x: 0.5em;
+    background-size: 1.3em;
+}
+
+.search-btn{
+    width: 20%;
+    height: 3.2em;
+    border-radius: 15em;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* ------ Header ------*/
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-container img{
+    width: 100%;
+}
+
+.card{
+    max-width: 25em;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 1em;
+    align-self: flex-start;
+}
+
+.card p{
+    font-size: 1.2rem;
+}
+
+/* ------ Main Content ------*/
+
+.container-col{
+    display: flex;
+    max-width: 1340px;
+    width: 100%;
+    margin: 2em auto;
+    flex-direction: column;
+}
+
+.container-col > *{
+    margin: 1rem 1rem 0 1rem;
+}
+
+.container-col > p{
+    font-size: 1.2rem;
+}
+
+
+.course-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.course-bar-item{
+    margin: 0 1em 0 0;
+    font-weight: bold;
+    color: gray;
+}
+
+.course-bar-item-active{
+    color: black;
+}
+
+.section-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(192, 192, 192);
+    align-items: flex-start;
+}
+
+.section-item{
+    max-width: 800px;
+    margin: 2em 0 0 1.5em;
+}
+
+/* ------ Courses Box ------*/
+
+.course-container{
+    margin: 2em 0 0 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card{
+    margin: 0.4em;
+    max-width: 240px;
+}
+
+.course-img{
+    border: 1px solid lightgray;
+}
+
+.course-title, .course-price{
+    display: block;
+    font-weight: bold; 
+    margin: 0.5em 0;
+}
+
+.course-author, .rating-numbers{
+    font-size: 0.8em;
+    color: gray;
+    margin: 0.4em 0;
+}
+
+.rating-numbers{
+    font-weight: 600;
+}
+
+.rating{
+    color: #b4690e;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.rating i{
+    color: #e59819;
+}
+
+/* ------ Utility ------*/
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover{
+    color: #5624d0;
+}
+
+li img{
+    display: block;
+}
+
+.btn-outline{
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black !important;
+    padding: 0.7em 0.85em;
+}
+
+.btn{
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: black;
+    color: white !important; 
+    padding: 0.7em 0.85em;
+}
+
+@media only screen and (max-width: 1014px) {
+    .card{
+        top: 5%;
+        left: 2%;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-menu{
+        display: inline-block;
+        order: 1;
+        font-size: 2em;
+    }
+    .nav-logo{
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 816px) {
+    .course-container{
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    .card{
+        position: static;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .container-col{
+        margin: 0 auto;
+    }
+    .header-container img{
+        min-height: 12em;
+    }
+}
