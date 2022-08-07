@@ -94,7 +94,7 @@ h1, h2{
     margin: 0 auto;
     position: relative;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .header-container img{
@@ -212,6 +212,7 @@ h1, h2{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited{
@@ -273,13 +274,15 @@ li img{
     .card{
         position: static;
         max-width: 100%;
-        top: 0;
-        left: 0;
+        margin-top: 12em;
     }
     .container-col{
         margin: 0 auto;
     }
     .header-container img{
         min-height: 12em;
+        min-width: 40.2em;
+        position: absolute;
+        right: 0;
     }
 }
