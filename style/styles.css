@@ -1,0 +1,497 @@
+html,
+body {
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: #1c1d1f;
+    color: white;
+}
+
+.Logo {
+    height: 34px;
+    cursor: pointer;
+}
+
+/* ------ Navigation Bar ------*/
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height: 4em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-list {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: inline-block;
+    max-height: 100%;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.nav-item-1 {
+    flex-grow: 0;
+}
+
+.nav-item-2 {
+    flex-grow: 1;
+}
+
+.nav-item-30 {
+    flex-grow: 30;
+    cursor: default;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.search-input {
+    width: 60%;
+    height: 2em;
+    padding: 0.5em;
+    padding-left: 2.5em;
+    border-radius: 9999px;
+    border: 1px solid black;
+    background: url(../images/search-svgrepo-com.svg) no-repeat left;
+    background-color: rgb(241, 241, 241);
+    background-position-x: 0.5em;
+    background-size: 1.3em;
+    transition: all 200ms;
+}
+
+.search-btn {
+    width: 20%;
+    height: 3.2em;
+    border-radius: 15em;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* ------ Header ------*/
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1340px;
+    width: 100%;
+    margin: 4em auto 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.header-container img {
+    width: 100%;
+}
+
+.card {
+    max-width: 25em;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 1em;
+    align-self: flex-start;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+/* ------ Main Content ------*/
+
+.main-container-col {
+    display: flex;
+    max-width: 1340px;
+    width: 100%;
+    margin: 2em auto;
+    flex-direction: column;
+}
+
+.main-container-col>* {
+    margin: 1rem 1rem 0 1rem;
+}
+
+.main-container-col>p {
+    font-size: 1.2rem;
+}
+
+.course-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.course-bar-item {
+    cursor: pointer;
+    margin: 0 1em 0 0;
+    font-weight: bold;
+    color: gray;
+    transition: all 200ms;
+}
+
+.course-bar-item:hover {
+    color: black;
+}
+
+.course-bar-item-active {
+    color: black;
+}
+
+.section-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(192, 192, 192);
+    align-items: flex-start;
+}
+
+.section-item {
+    max-width: 800px;
+    margin: 2em 0 0 1.5em;
+}
+
+/* ------ Courses Box ------*/
+
+.course-container {
+    margin: 2em 0 0 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    cursor: pointer;
+    margin: 0.4em;
+    max-width: 240px;
+}
+
+.course-img {
+    border: 1px solid lightgray;
+    transition: all 100ms;
+}
+
+.course-img:hover {
+    filter: brightness(80%);
+}
+
+.course-title,
+.course-price {
+    display: -webkit-box;
+    font-weight: bold;
+    margin: 0.5em 0;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+.course-author,
+.rating-numbers {
+    font-size: 0.8em;
+    color: gray;
+    margin: 0.4em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rating-numbers {
+    font-weight: 600;
+}
+
+.rating {
+    color: #b4690e;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.rating i {
+    color: #e59819;
+}
+
+/* ------ Topics ------*/
+
+.topic-card {
+    cursor: pointer;
+    background-color: white;
+    margin: 1em 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid #d1d7dc;
+    min-width: 17rem;
+    transition: all 200ms;
+}
+
+.topic-card:hover {
+    filter: brightness(95%);
+    color: #401b9c;
+}
+
+.topic-card-superscript {
+    color: #6a6f73;
+    margin-bottom: 0.8em;
+    font-size: 0.75em;
+    font-weight: 800;
+}
+
+.topic-card-title {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.topic-card-subscript {
+    color: #6a6f73;
+    font-size: 0.8em;
+}
+
+.org-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.org-item {
+    cursor: pointer;
+}
+
+/* ------ Footer ------*/
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em auto 0 auto;
+}
+
+.footer-item {
+    flex-grow: 1;
+    max-width: 16em;
+    min-width: 9em;
+    margin: 2em 0 0 2em;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    cursor: pointer;
+    width: 6.6em;
+    padding: 0 1em;
+    height: 2.4em;
+    border: 1px solid white;
+}
+
+.footer-btn:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.footer-item img {
+    filter: invert(100%);
+    margin-right: 0.3em;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em 0 0 0;
+}
+
+.copyright-item {
+    margin: 2em;
+    font-size: 0.75em;
+}
+
+/* ------ Utility ------*/
+
+.serif {
+    font-family: Georgia, Times, times new roman, serif;
+}
+
+nav a,
+.course-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:visited,
+.course-card a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover {
+    color: #5624d0;
+}
+
+li img {
+    display: block;
+}
+
+.inline-link {
+    color: #5624d0;
+    text-decoration: underline;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.inline-link:hover {
+    color: #401b9c;
+}
+
+.center-contents {
+    justify-content: center;
+}
+
+.center-items {
+    align-items: center;
+}
+
+.item-grow {
+    flex-grow: 1;
+}
+
+.item-shrink {
+    flex-shrink: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em auto 0 auto;
+}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.btn-outline {
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black !important;
+    padding: 0.7em 0.85em;
+    transition: all 200ms;
+}
+
+.btn-outline:hover {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.btn {
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: black;
+    color: white !important;
+    padding: 0.7em 0.85em;
+}
+
+@media only screen and (max-width: 1014px) {
+    .card {
+        top: 5%;
+        left: 2%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-menu {
+        display: inline-block;
+        order: 1;
+        font-size: 2em;
+    }
+
+    .nav-logo {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 816px) {
+    .course-container {
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 726px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        max-width: none;
+        order: 1;
+    }
+
+    .footer-item-btn {
+        order: 0;
+    }
+
+    .org-item {
+        margin: 0 1em;
+        min-width: 10em;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    .card {
+        position: static;
+        max-width: 100%;
+        margin-top: 12em;
+        box-shadow: none;
+    }
+
+    .main-container-col {
+        margin: 0 auto;
+    }
+
+    .header-container img {
+        min-height: 12em;
+        min-width: 40.2em;
+        position: absolute;
+        right: 0;
+    }
+}
