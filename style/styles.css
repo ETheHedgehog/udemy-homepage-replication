@@ -73,10 +73,11 @@ footer {
     padding-left: 2.5em;
     border-radius: 9999px;
     border: 1px solid black;
-    background: url("images/search-svgrepo-com.svg") no-repeat left;
+    background: url(../images/search-svgrepo-com.svg) no-repeat left;
     background-color: rgb(241, 241, 241);
     background-position-x: 0.5em;
     background-size: 1.3em;
+    transition: all 200ms;
 }
 
 .search-btn {
@@ -202,9 +203,13 @@ footer {
 
 .course-title,
 .course-price {
-    display: block;
+    display: -webkit-box;
     font-weight: bold;
     margin: 0.5em 0;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
 }
 
 .course-author,
@@ -212,6 +217,9 @@ footer {
     font-size: 0.8em;
     color: gray;
     margin: 0.4em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rating-numbers {
