@@ -1,104 +1,585 @@
 {
-  "courses": [
-    {
-      "id": 1,
-      "title": "Learn Python: The Complete Python Programming Course",
-      "author": "Avinash Jain, The Codex",
-      "image": "images/python1.jpg",
-      "rating": 4.4,
-      "ratings": 2906,
-      "category": "python",
-      "price": 94.99
-    },
-    {
-      "id": 2,
-      "title": "Learning Python for Data Analysis and Visualization",
-      "author": "Jose Portilla",
-      "image": "images/python2.jpg",
-      "rating": 4.4,
-      "ratings": 17981,
-      "category": "python",
-      "price": 119.99
-    },
-    {
-      "id": 3,
-      "title": "Python for Beginners - Learn Programming From Scratch",
-      "author": "Edwin Diaz, Coding Faculty Solutions",
-      "image": "images/python3.jpg",
-      "rating": 4.4,
-      "ratings": 1762,
-      "category": "python",
-      "price": 84.99
-    },
-    {
-      "id": 4,
-      "title": "Learn Python: Python for Beginners",
-      "author": "Abrar Hussain",
-      "image": "images/python4.jpg",
-      "rating": 4.2,
-      "ratings": 2766,
-      "category": "python",
-      "price": 29.99
-    },
-    {
-      "id": 5,
-      "title": "Python Beyond the Basics - Object-Oriented Programming",
-      "author": "Infinite Skills",
-      "image": "images/python5.jpg",
-      "rating": 4.4,
-      "ratings": 2929,
-      "category": "python",
-      "price": 49.99
-    },
-    {
-      "id": 6,
-      "title": "Learn Python: The Complete Python Programming Course",
-      "author": "Avinash Jain, The Codex",
-      "image": "images/python6.jpg",
-      "rating": 4.4,
-      "ratings": 2906,
-      "category": "python",
-      "price": 94.99
-    },
-    {
-      "id": 7,
-      "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
-      "author": "Infinite Skills",
-      "image": "images/excel1.jpg",
-      "rating": 4.5,
-      "ratings": 3501,
-      "category": "excel",
-      "price": 49.99
-    },
-    {
-      "id": 8,
-      "title": "Sharper skills using Microsoft Excel 2010 for business",
-      "author": "Ulrika Hedlund",
-      "image": "images/excel2.jpg",
-      "rating": 4.7,
-      "ratings": 655,
-      "category": "excel",
-      "price": 19.99
-    },
-    {
-      "id": 9,
-      "title": "Javascript for Beginners",
-      "author": "Tech Learning Network",
-      "image": "images/js1.jpg",
-      "rating": 4.5,
-      "ratings": 779,
-      "category": "javascript",
-      "price": 19.99
-    },
-    {
-      "id": 10,
-      "title": "Machine Learning, Data Science and Deep Learning with Python",
-      "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
-      "image": "images/data1.jpg",
-      "rating": 4.5,
-      "ratings": 27620,
-      "category": "data science",
-      "price": 24.99
-    }
-  ]
+  "info": {
+    "categories": [
+      "python",
+      "excel",
+      "web-development",
+      "javascript",
+      "data-science",
+      "aws",
+      "drawing"
+    ],
+    "courses": [
+      {
+        "id": 1,
+        "title": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "image": "images/python1.jpg",
+        "rating": 4.4,
+        "ratings": 2906,
+        "category": "python",
+        "price": 94.99
+      },
+      {
+        "id": 2,
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portilla",
+        "image": "images/python2.jpg",
+        "rating": 4.4,
+        "ratings": 17981,
+        "category": "python",
+        "price": 119.99
+      },
+      {
+        "id": 3,
+        "title": "Python for Beginners - Learn Programming From Scratch",
+        "author": "Edwin Diaz, Coding Faculty Solutions",
+        "image": "images/python3.jpg",
+        "rating": 4.4,
+        "ratings": 1762,
+        "category": "python",
+        "price": 84.99
+      },
+      {
+        "id": 4,
+        "title": "Learn Python: Python for Beginners",
+        "author": "Abrar Hussain",
+        "image": "images/python4.jpg",
+        "rating": 4.2,
+        "ratings": 2766,
+        "category": "python",
+        "price": 29.99
+      },
+      {
+        "id": 5,
+        "title": "Python Beyond the Basics - Object-Oriented Programming",
+        "author": "Infinite Skills",
+        "image": "images/python5.jpg",
+        "rating": 4.4,
+        "ratings": 2929,
+        "category": "python",
+        "price": 49.99
+      },
+      {
+        "id": 6,
+        "title": "Learn Python: The Complete Python Programming Course",
+        "author": "Avinash Jain, The Codex",
+        "image": "images/python6.jpg",
+        "rating": 4.4,
+        "ratings": 2906,
+        "category": "python",
+        "price": 94.99
+      },
+      {
+        "id": 7,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 8,
+        "title": "Sharper skills using Microsoft Excel 2010 for business",
+        "author": "Ulrika Hedlund",
+        "image": "images/excel2.jpg",
+        "rating": 4.7,
+        "ratings": 655,
+        "category": "excel",
+        "price": 19.99
+      },
+      {
+        "id": 9,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 10,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 11,
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portilla",
+        "image": "images/python2.jpg",
+        "rating": 4.4,
+        "ratings": 17981,
+        "category": "python",
+        "price": 119.99
+      },
+      {
+        "id": 12,
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portilla",
+        "image": "images/python2.jpg",
+        "rating": 4.4,
+        "ratings": 17981,
+        "category": "python",
+        "price": 119.99
+      },
+      {
+        "id": 13,
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portilla",
+        "image": "images/python2.jpg",
+        "rating": 4.4,
+        "ratings": 17981,
+        "category": "python",
+        "price": 119.99
+      },
+      {
+        "id": 14,
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Jose Portilla",
+        "image": "images/python2.jpg",
+        "rating": 4.4,
+        "ratings": 17981,
+        "category": "python",
+        "price": 119.99
+      },
+      {
+        "id": 15,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 16,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 17,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 18,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 19,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 20,
+        "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+        "author": "Infinite Skills",
+        "image": "images/excel1.jpg",
+        "rating": 4.5,
+        "ratings": 3501,
+        "category": "excel",
+        "price": 49.99
+      },
+      {
+        "id": 21,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 22,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 23,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 24,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 25,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 26,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 27,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 28,
+        "title": "Javascript for Beginners",
+        "author": "Tech Learning Network",
+        "image": "images/js1.jpg",
+        "rating": 4.5,
+        "ratings": 779,
+        "category": "javascript",
+        "price": 19.99
+      },
+      {
+        "id": 29,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 30,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 31,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 32,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 33,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 34,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 35,
+        "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+        "author": "Tech Learning Network, Mark Lassoff",
+        "image": "images/web.jpg",
+        "rating": 4.5,
+        "ratings": 2739,
+        "category": "web-development",
+        "price": 99.99
+      },
+      {
+        "id": 36,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 37,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 38,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 39,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 40,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 41,
+        "title": "Machine Learning, Data Science and Deep Learning with Python",
+        "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+        "image": "images/data1.jpg",
+        "rating": 4.5,
+        "ratings": 27620,
+        "category": "data-science",
+        "price": 24.99
+      },
+      {
+        "id": 42,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 43,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 44,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 45,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 46,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 47,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 48,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 49,
+        "title": "AWS Certified Security Specialty 2022",
+        "author": "Zeal Vora",
+        "image": "images/aws.jpg",
+        "rating": 4.6,
+        "ratings": 5331,
+        "category": "aws",
+        "price": 34.99
+      },
+      {
+        "id": 50,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 51,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 52,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 53,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 54,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 55,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 56,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      },
+      {
+        "id": 57,
+        "title": "The Secrets to Drawing",
+        "author": "Matthew Fussell",
+        "image": "images/drawing.jpg",
+        "rating": 4.6,
+        "ratings": 3938,
+        "category": "drawing",
+        "price": 29.99
+      }
+    ]
+  }
 }
